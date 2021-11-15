@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta charec set -->
+  <meta charset="UTF-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page Title -->
+  <title>Movie App</title>
+  <!-- CSS
+	================================================== -->
+  <!--Bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Fontawesome Icon font -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+  <!-- 
+      Fixed Sidebar
+      ==================================== -->
+  <header class="position-relative">
+    <div class="position-fixed h-100" id="sidebar">
+
+      <!-- main navbar -->
+      <div class="content d-flex flex-column justify-content-between h-100">
+        <ul>
+          <li><a href="#now_playing" class="nav-link">Now playing</a></li>
+          <li><a href="#popular" class="nav-link">Popular</a></li>
+          <li><a href="#top_rated" class="nav-link">Top Rated</a></li>
+          <li><a href="#trending" class="nav-link">Trending</a></li>
+          <li><a href="#upcoming" class="nav-link">Upcoming</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="social-icons ps-4 pb-4">
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fas fa-globe"></i></a>
+          <p class="pt-2 pe-2">
+            Copyright Â© 2021 All Rights Reserved.
+          </p>
+        </div>
+      </div>
+      <!-- end main navbar -->
+
+      <!-- sidebar btn conatiner -->
+      <div
+        class="sidebar-btn-container position-absolute top-0 bottom-0 bg-white d-flex flex-column align-items-center justify-content-between">
+        <div class="logo mt-2 mt-md-4"><img src="images/logo.png" alt=""></div>
+        <div id="sidebar-btn"><i class="fa fa-align-justify"></i></div>
+        <div class="social-icons mb-4 d-flex flex-column">
+          <i class="fas fa-globe py-3"></i>
+          <i class="fas fa-share-alt"></i>
+        </div>
+      </div>
+      <!-- end sidebar btn conatiner -->
+    </div>
+  </header>
+  <!-- 
+      End Fixed Sidebar
+      ==================================== -->
+
+
+  <!-- 
+      Main Content Section
+      ==================================== -->
+  <section class="ml" id="content">
+    <div class="container py-4">
+      <!-- search bars -->
+      <div class="row pt-5">
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="searchByWord" placeholder="get movies by word...">
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="search" placeholder="search">
+        </div>
+      </div>
+      <!-- end search bars -->
+    </div>
+    <div class="container py-5 py-2">
+      <!-- data container -->
+      <div class="row gy-3 position-relative" id="data">
+
+      </div>
+      <!--end data container -->
+    </div>
+  </section>
+  <!-- 
+      End Main Content Section
+      ==================================== -->
+
+  <!-- 
+      Contact Section
+      ==================================== -->
+  <section id="contact" class="ml">
+    <div class="container p-5">
+      <h2 class="text-white">ContactUs...</h2>
+      <form action="">
+        <div class="row pt-5">
+          <div class="col-md-6 py-2">
+            <input type="text" class="form-control" id="nameInput" placeholder="Enter Your Name">
+            <div class="alert alert-danger d-none" id="nameError">Your Name is not valid</div>
+          </div>
+          <div class="col-md-6 py-2">
+            <input type="text" class="form-control" id="emailInput" placeholder="Enter Email">
+            <div class="alert alert-danger d-none" id="emailError">Enter valid email</div>
+          </div>
+          <div class="col-md-6 py-2">
+            <input type="text" class="form-control" id="phoneInput" placeholder="Enter Phone">
+            <div class="alert alert-danger d-none" id="phoneError">Enter valid phone</div>
+          </div>
+          <div class="col-md-6 py-2">
+            <input type="text" class="form-control" id="ageInput" placeholder="Enter Age">
+            <div class="alert alert-danger d-none" id="ageError">Enter valid age</div>
+          </div>
+          <div class="col-md-6 py-2">
+            <input type="password" class="form-control" id="passwordInput" placeholder="Enter Password">
+            <div class="alert alert-danger d-none" id="passwordError">Enter valid password *Minimum eight characters, at
+              least one letter and one number:*</div>
+          </div>
+          <div class="col-md-6 py-2">
+            <input type="password" class="form-control" id="rePasswordInput" placeholder="ReEnter Password">
+            <div class="alert alert-danger d-none" id="rePasswordError">Passwords must match</div>
+          </div>
+        </div>
+        <button class="btn mt-2" id="submit" disabled>Submit</button>
+      </form>
+    </div>
+  </section>
+  <!-- 
+     End Contact Section
+      ==================================== -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
